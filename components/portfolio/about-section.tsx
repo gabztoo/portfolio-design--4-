@@ -1,6 +1,7 @@
 "use client"
 
-import { MapPin, Calendar, Code2 } from "lucide-react"
+import Image from "next/image"
+import { MapPin, Calendar } from "lucide-react"
 
 export function AboutSection() {
   return (
@@ -23,10 +24,16 @@ export function AboutSection() {
           <div className="absolute bottom-0 right-0 w-6 h-6 border-b-2 border-r-2 border-primary" />
 
           <div className="p-8 flex flex-col md:flex-row gap-8 items-center md:items-start">
-            {/* Avatar Placeholder */}
+            {/* Avatar */}
             <div className="relative">
               <div className="w-32 h-32 rounded-full border-2 border-primary bg-primary/10 flex items-center justify-center overflow-hidden">
-                <Code2 className="w-16 h-16 text-primary/50" />
+                <Image 
+                  src="/profile.jpg" 
+                  alt="Gabriel Gadelha" 
+                  width={128} 
+                  height={128}
+                  className="w-full h-full object-cover"
+                />
               </div>
               {/* Online indicator */}
               <div className="absolute bottom-2 right-2 w-4 h-4 rounded-full bg-primary border-2 border-background animate-pulse" />
