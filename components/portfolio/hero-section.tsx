@@ -163,7 +163,7 @@ export function HeroSection({ onTripleClick, onRetroMode }: HeroSectionProps) {
               className="border-primary/50 text-primary hover:bg-primary/10 hover:border-primary gap-2 bg-transparent"
               asChild
             >
-              <a href="/GABRIEL GADELHA - DEV FULLSTACK.pdf" download="Gabriel Gadelha - Dev Fullstack.pdf">
+              <a href="/Gabriel Gadelha - Dev Fullstack.pdf" download="Gabriel Gadelha - Dev Fullstack.pdf">
                 <FileDown className="w-4 h-4" />
                 DOWNLOAD CV
               </a>
@@ -192,3 +192,4 @@ function StatItem({ label, value, isOnline }: { label: string; value: string; is
     </div>
   )
 }
+
